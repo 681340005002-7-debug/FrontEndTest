@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import "./Personlist.css";
-import dev from "../assets/dev.svg";
+import dev from "../assets/Dev.svg";
 import marketing from "../assets/marketing.svg";
 import sales from "../assets/sales.svg";
 
