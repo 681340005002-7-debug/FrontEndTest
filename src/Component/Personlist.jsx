@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./Personlist.css";
 import dev from "../assets/Dev.svg";
-import marketing from "../assets/marketing.svg";
+import marketing from "../assets/Marketing.svg";
 import sales from "../assets/sales.svg";
 
 function PersonList() {
