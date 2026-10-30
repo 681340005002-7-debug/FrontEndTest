@@ -1,0 +1,132 @@
+
+.header {
+  width: 100%;
+  color: white;
+  padding: 28px 5% 65px;
+  background: linear-gradient(135deg, #173B78, #2456A6, #3978D8);
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 8px 25px rgba(23, 59, 120, 0.2);
+}
+
+.header-content {
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-logo {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #174A91;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header-title h1 {
+  font-size: 25px;
+  margin: 0 0 5px;
+  color: white;
+}
+
+.header-title p {
+  font-size: 14px;
+  color: #EAF2FF;
+}
+
+.age-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 15px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+}
+
+.age-box span {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.age-box h2 {
+  font-size: 25px;
+  margin-top: 3px;
+  color: white;
+}
+
+.age-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.age-buttons button {
+  border: 1px solid #D5E3F7;
+  border-radius: 9px;
+  background: white;
+  color: #174A91;
+  padding: 9px 12px;
+  font-weight: bold;
+}
+
+.age-buttons button:hover {
+  background: #DCEBFF;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 25px 20px 65px;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .header-content {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .header-title h1 {
+    font-size: 19px;
+  }
+
+  .header-title p {
+    font-size: 12px;
+  }
+
+  .header-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .age-box {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .age-buttons {
+    gap: 5px;
+  }
+
+  .age-buttons button {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+}

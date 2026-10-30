@@ -1,0 +1,362 @@
+
+.person-section {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 28px;
+  border: 1px solid #C8D5E5;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(30, 64, 100, 0.08);
+}
+
+/* ส่วนหัว */
+.person-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.person-heading h2 {
+  font-size: 24px;
+  color: #17365D;
+  margin-bottom: 6px;
+}
+
+.person-heading p {
+  color: #52657D;
+  font-size: 14px;
+}
+
+.person-total {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: #E8F1FF;
+  border: 1px solid #AFC9EB;
+  border-radius: 12px;
+  color: #244C7D;
+  font-size: 14px;
+}
+
+.person-total strong {
+  color: #174A91;
+  font-size: 23px;
+}
+
+/* แถบเครื่องมือ */
+.person-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.person-toolbar h3 {
+  font-size: 18px;
+  color: #17365D;
+  margin-bottom: 5px;
+}
+
+.person-toolbar p {
+  font-size: 13px;
+  color: #52657D;
+}
+
+/* ปุ่ม */
+.toggle-button {
+  border: 1px solid #174A91;
+  background: #174A91;
+  color: #FFFFFF;
+  padding: 11px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.toggle-button:hover {
+  background: #103768;
+}
+
+/* กรอบตาราง */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 2px solid #8FA9C8;
+  border-radius: 12px;
+}
+
+/* ตารางหลัก */
+.person-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* หัวตาราง */
+.person-table thead {
+  background: #173F70;
+}
+
+.person-table th {
+  padding: 16px 18px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+  border: 1px solid #7893B3;
+}
+
+/* ข้อมูลในตาราง */
+.person-table td {
+  padding: 14px 18px;
+  color: #26384D;
+  font-size: 14px;
+  border: 1px solid #B8C9DC;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* สีสลับแถว */
+.person-table tbody tr:nth-child(odd) {
+  background: #FFFFFF;
+}
+
+.person-table tbody tr:nth-child(even) {
+  background: #EAF2FC;
+}
+
+/* เมื่อเลื่อนเมาส์ผ่านแถว */
+.person-table tbody tr:hover {
+  background: #D4E6FF;
+}
+
+/* ลำดับ */
+.person-table th:first-child,
+.person-table td:first-child {
+  text-align: center;
+  width: 75px;
+}
+
+/* รหัสสมาชิก */
+.person-table td:nth-child(3) {
+  text-align: center;
+  font-weight: 700;
+  color: #174A91;
+}
+
+/* เพศ */
+.person-table td:nth-child(4) {
+  text-align: center;
+}
+
+/* รูปและชื่อ */
+.member-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #17365D;
+}
+
+.member-info img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  padding: 5px;
+  background: #EAF2FC;
+  border: 1px solid #B8C9DC;
+  border-radius: 10px;
+}
+
+/* ป้ายตำแหน่ง */
+.position-label {
+  display: inline-block;
+  min-width: 95px;
+  text-align: center;
+  padding: 7px 12px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid;
+}
+
+.dev-label {
+  background: #DBEAFE;
+  color: #174EA6;
+  border-color: #8CB7EF;
+}
+
+.marketing-label {
+  background: #FCE7F3;
+  color: #9D174D;
+  border-color: #E9A8C7;
+}
+
+.sales-label {
+  background: #DCFCE7;
+  color: #166534;
+  border-color: #86D5A0;
+}
+
+/* สถานะ */
+.status-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 7px 10px;
+  background: #DCFCE7;
+  color: #166534;
+  border: 1px solid #86D5A0;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background: #15803D;
+  border-radius: 50%;
+}
+
+/* การ์ดสมาชิกบนมือถือ */
+.mobile-member-list {
+  display: none;
+}
+
+.mobile-member-card {
+  background: #FFFFFF;
+  border: 1px solid #B8C9DC;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(30, 64, 100, 0.06);
+}
+
+.mobile-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-member-card .member-info img {
+  width: 46px;
+  height: 46px;
+}
+
+.mobile-member-card h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #17365D;
+}
+
+.mobile-member-id {
+  font-size: 11px;
+  color: #52657D;
+}
+
+.mobile-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #B8C9DC;
+  margin-top: 13px;
+  padding-top: 12px;
+  color: #334155;
+  font-size: 12px;
+}
+
+/* ซ่อนข้อมูล */
+.hidden-message {
+  padding: 55px 15px;
+  text-align: center;
+  background: #EAF2FC;
+  border: 1px solid #B8C9DC;
+  border-radius: 14px;
+}
+
+.hidden-message p {
+  color: #17365D;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.hidden-message span {
+  color: #52657D;
+  font-size: 13px;
+}
+
+/* ท้ายรายการ */
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #B8C9DC;
+  color: #52657D;
+  font-size: 12px;
+}
+
+/* หน้าจอมือถือ */
+@media (max-width: 600px) {
+  .person-section {
+    padding: 19px 14px;
+    border-radius: 20px;
+  }
+
+  .person-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .person-heading h2 {
+    font-size: 21px;
+  }
+
+  .person-total {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .person-toolbar {
+    align-items: center;
+  }
+
+  .person-toolbar h3 {
+    font-size: 16px;
+  }
+
+  .person-toolbar p {
+    font-size: 11px;
+  }
+
+  .toggle-button {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .table-container {
+    display: none;
+  }
+
+  .mobile-member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .table-footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

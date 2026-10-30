@@ -1,0 +1,134 @@
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
+.main-content {
+  width: 90%;
+  max-width: 1150px;
+  margin: -35px auto 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.content-welcome {
+  margin: 0 0 22px;
+  padding: 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(30, 64, 100, 0.05);
+}
+
+.welcome-badge {
+  display: inline-block;
+  color: #5267df;
+  background: #eef1ff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.content-welcome h2 {
+  color: #17365d;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.content-welcome p {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Bottom Navigation */
+.bottom-navigation {
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  width: min(480px, calc(100% - 30px));
+  min-height: 72px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(15px);
+  border: 1px solid #e6eaf2;
+  border-radius: 22px;
+  box-shadow: 0 8px 30px rgba(30, 50, 100, 0.14);
+}
+
+.nav-item {
+  flex: 1;
+  min-height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: none;
+  border-radius: 15px;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 11px;
+  transition: 0.2s ease;
+}
+
+.nav-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.nav-item.active {
+  color: #5267df;
+  background: #eef1ff;
+  font-weight: 700;
+}
+
+.nav-item:active {
+  transform: scale(0.95);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .main-content {
+    margin-top: -35px;
+  }
+
+  .content-welcome {
+    padding: 24px 28px;
+  }
+
+  .bottom-navigation {
+    bottom: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .main-content {
+    width: 92%;
+    margin-top: -35px;
+  }
+
+  .content-welcome {
+    padding: 17px;
+    border-radius: 18px;
+  }
+
+  .content-welcome h2 {
+    font-size: 19px;
+  }
+
+  .bottom-navigation {
+    bottom: 10px;
+    width: calc(100% - 24px);
+    border-radius: 19px;
+  }
+}
