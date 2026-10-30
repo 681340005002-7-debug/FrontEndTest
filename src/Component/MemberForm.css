@@ -1,0 +1,115 @@
+.photo-field {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px;
+  margin-bottom: 6px;
+  background: #f1f5fc;
+  border: 2px dashed #8da0c0;
+  border-radius: 14px;
+}
+
+.photo-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.photo-actions small {
+  color: #4f607a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.photo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.upload-button {
+  border: 1.5px solid #8f9eef;
+  background: #dce3ff;
+  color: #2a3bb0;
+  padding: 8px 14px;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.upload-button:hover { background: #c5d0ff; }
+.upload-button:disabled { opacity: .6; cursor: wait; }
+
+.remove-photo {
+  border: 1.5px solid #ec8d8d;
+  background: #ffe8e8;
+  color: #b71c1c;
+  padding: 8px 12px;
+  border-radius: 9px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.remove-photo:hover { background: #ffd0d0; }
+
+.field {
+  margin-top: 14px;
+  min-width: 0;
+}
+
+.field label {
+  display: block;
+  color: #2f405a;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.field .req { color: #c62828; }
+
+.field input,
+.field select {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  border: 1.5px solid #8da0c0;
+  border-radius: 9px;
+  outline: none;
+  color: #1f2f49;
+  background: white;
+  font-size: 13px;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #2c45c4;
+  box-shadow: 0 0 0 3px rgba(44, 69, 196, .20);
+}
+
+.field.has-error input,
+.field.has-error select {
+  border-color: #c62828;
+}
+
+.field-error {
+  margin: 6px 0 0;
+  color: #c62828;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 14px;
+}
+
+@media (max-width: 520px) {
+  .form-row { grid-template-columns: 1fr; }
+  .photo-field { flex-direction: column; text-align: center; }
+  .photo-actions { align-items: center; }
+  .photo-buttons { justify-content: center; }
+}

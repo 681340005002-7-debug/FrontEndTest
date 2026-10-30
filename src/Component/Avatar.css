@@ -1,0 +1,33 @@
+.avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: block;
+}
+
+.avatar-sm { width: 38px; height: 38px; }
+.avatar-md { width: 52px; height: 52px; }
+.avatar-lg { width: 80px; height: 80px; }
+.avatar-xl { width: 112px; height: 112px; }
+
+.avatar-photo {
+  object-fit: cover;
+  background: #eef2f8;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1.5px #8da0c0, 0 3px 8px rgba(30, 64, 100, .2);
+}
+
+.avatar-default {
+  object-fit: contain;
+  padding: 5px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1.5px #8da0c0, 0 3px 8px rgba(30, 64, 100, .15);
+}
+
+.avatar-lg.avatar-default,
+.avatar-xl.avatar-default {
+  padding: 8px;
+}
+
+.dev-bg { background: #d6ddff; }
+.marketing-bg { background: #ffe0bd; }
+.sales-bg { background: #c6f0da; }
