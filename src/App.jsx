@@ -24,8 +24,8 @@ function App() {
       <main className="main-content">
         <div className="content-welcome">
           <span className="welcome-badge">MY DASHBOARD</span>
-          <h2>ภาพรวมข้อมูล</h2>
-          <p>จัดการและตรวจสอบข้อมูลสมาชิกของคุณ</p>
+          <h2>ภาพรวมข้อมูลของเรา</h2>
+          <p>จัดการและตรวจสอบข้อมูลสมาชิกของบริษัท</p>
         </div>
 
         <PersonList />
